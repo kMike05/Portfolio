@@ -18,7 +18,7 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: url(https://media.discordapp.net/attachments/899589131347324928/1094473941483016273/7KjoSQR.png?width=1124&height=632);
+    background: url(port3.jpg);
     background-size: cover;
     background-position: center;
 
@@ -34,8 +34,8 @@ header{
     height: 55px;
     width: 55px;
     background: transparent;
-    border: 2px solid #2ecc71;
-    color: #2ecc71;
+    border: 2px solid mediumturquoise;
+    color: mediumturquoise;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -43,6 +43,39 @@ header{
     font-size: 20px;
     cursor: pointer;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color:#ffffff;
+  }
+  
+  .dropdown-content {
+    display: none;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 1;
+    position: absolute;
+    color: #ffffff;
+    
+  }
+  .dropdown-content a{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    color: #eee;
+    color: #ffffff;
+  }
+  .dropdown:hover .dropdown-content {
+    
+    color: #ffffff;
+  }
+  
 nav .hamb{
     width: 35px;
     height: 24px;
@@ -56,7 +89,7 @@ nav .hamb{
 }
 nav .hamb span{
     display: block;
-    background: #2ecc71;
+    background: mediumturquoise;
     width: 100%;
     height: 3px;
     transition: .3s;
@@ -79,21 +112,21 @@ nav .nav-list li a{
     font-weight: 600;
 }
 nav .nav-list li:not(:last-child) a:hover{
-    color: #2ecc71;
+    color: mediumturquoise;
     transition: .4s;
 }
 nav .nav-list li.btn a{
     display: inline-block;
     background: transparent;
-    border: 2px solid #2ecc71;
+    border: 2px solid mediumturquoise;
     padding: 9px 28px;
     border-radius: 30px;
     line-height: 1.3;
-    color: #2ecc71;
+    color: mediumturquoise;
     font-weight: 500;
 }
 nav .nav-list li.btn:hover a{
-    background: #2ecc71;
+    background: mediumturquoise;
     color: white;
     border: 2px solid transparent;
     transition: .4s;
@@ -112,7 +145,7 @@ nav .nav-list li.btn:hover a{
     margin: 20px 0px 20px;
 }
 span{
-    color: #2ecc71;
+    color: mediumturquoise;
 }
 .container .hero-text h3{
     color: #eee;
@@ -141,26 +174,35 @@ span{
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 35px;
 }
-.social a:hover{
+.social p{
+    color: #ffffff;
+}
+.social p:hover{
     transform: scale(1.1);
-    background: #2ecc71;
+    background: mediumturquoise;
     transition: .4s;
 }
+.social a:hover{
+    transform: scale(1.1);
+    background: mediumturquoise;
+    transition: .4s;
+}
+
 .container .hero-text button{
     color: #eee;
-    background: #2ecc71;
+    background:  mediumturquoise;;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     padding: 8px 30px;
-    border: 2px solid #2ecc71;
+    border: 2px solid mediumturquoise;
     border-radius: 30px;
     cursor: pointer;
 }
 .container .hero-text button:hover{
     background: transparent;
-    border: 2px solid #2ecc71;
-    color: #2ecc71;
+    border: 2px solid mediumturquoise;
+    color: mediumturquoise;
     transition: .4s;
 }
 .bottom{
@@ -231,3 +273,448 @@ span{
         right: 0;
     }
 }
+/*----start of contact me--*/
+.contact-form {
+    background-color: #8f8e8e;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 500px;
+    margin-top: 50px;
+   
+  }
+  .cons a{
+    flex: 1;
+    color: #ffffff;
+    padding: 2px;
+  }
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 300px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: black;
+    outline-color: black;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px mediumturquoise;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: mediumturquoise;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  /*----about me page--*/
+  .about{
+    display: flex;
+    z-index: 2;
+    padding: 10px;
+  }
+  .about ul{
+  display: flex;
+  padding: 0;
+  list-style: none;
+  }
+  .about ul li{
+    padding: 5px;
+  }
+  .card {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card:hover:after {
+    content: "Currently a 3rd Year Student at The Catholic University of Eastern Africa pursuing Bachelor of Science in Computer Science."
+    " Excellent technical skills.";
+ 
+   
+  }
+  .card1 {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background: rgb(72, 209, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .card1::before,
+  .card1::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  .card1::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card1::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card1:hover::before,
+  .card1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card1:hover:after {
+    content: " Friendliness and Personability\A"
+    " Communications skills\A"
+    " Problem Solving and Decision\A Making\A"
+    " Fluency in English, Kiswahili and\A bits of French\A"
+    " Programming in Python, PHP, C#,\A HTML, CSS";
+    font-size: medium;
+    white-space: pre;
+ 
+   
+  }
+  .card2 {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .card2::before,
+  .card2::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  .card2::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card2::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card2:hover::before,
+  .card2:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card2:hover:after {
+    content: "Cybercafé Attendant:\A"
+    "LeonTech Cybercafé, Kericho, Kenya;\A April 2020 – September 2020|||"
+    "Duties:"
+    " Troubleshoot internet problems that a customer might encounter."
+    " Attend all the needs of the customers."
+    "  computer maintenance and software installation.";
+    font-size: medium;
+ 
+   
+  }
+  .card3 {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .card3::before,
+  .card3::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  .card3::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card3::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card3:hover::before,
+  .card3:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card3:hover:after {
+    content: " Friends School Kamusinga-\A Feb 2016-Nov 2019\A"
+    " B.A in Computer Science– CUEA; \AOct 2020-Apr 2024\A"
+    
+    " Huawei Datacom – CUEA\A Nairobi; July 2021";
+    font-size: medium;
+    white-space: pre;
+ 
+   
+  }
+    
+
+.card4 {
+  position: relative;
+  width: 220px;
+  height: 350px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.card4::before,
+.card4::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.card4::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card4::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card4:hover::before,
+.card4:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+  .card4:hover:after{
+    content: "Miss Norah Masinde\A"
+    "Teacher, Kamusinga\A"
+    "0717507266..\A"
+    "Mr Edward Kioko\A" 
+    "Lecturer, Catholic University\A"
+    "0725695782";
+    font-size: medium;
+    white-space: pre;
+  }
+    
+
+.card5{
+  position: relative;
+  width: 220px;
+  height: 350px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.card5::before,
+.card5::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.card5::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card5::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card5:hover::before,
+.card5:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+  .card5:hover:after{
+    content: "Currently a 3rd Year Student at The Catholic University of Eastern Africa pursuing Bachelor of Science in Computer Science."
+    " Excellent technical skills.";
+    font-size: medium;
+  }
+  
