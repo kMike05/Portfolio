@@ -151,7 +151,7 @@ body {
 
 .image-container {
     width: 560px;
-    height: 560px;
+    height: 610px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: none;
@@ -814,3 +814,4 @@ section {
         scroll-behavior: smooth;
     }
 }
+
